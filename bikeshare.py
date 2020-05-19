@@ -159,7 +159,7 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
     sleep(3)
     # TO DO: display most commonly used start station
     popular_start_station = df['Start Station'].mode()[0]
@@ -188,7 +188,7 @@ def trip_duration_stats(df):
     sleep(2)
     print('\nCalculating Trip Duration...\n')
     sleep(1)
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
@@ -207,7 +207,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
     sleep(1)
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts()
