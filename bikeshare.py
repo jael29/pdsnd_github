@@ -45,7 +45,7 @@ def get_filters():
         # print(city)
 
         if city in ('chicago', 'new york city', 'washington'):
-
+            # verifying if variable city matches a city
             break
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -61,7 +61,7 @@ def get_filters():
 
         if month in ('january', 'february', 'march', 'april',
                      'may', 'june', 'all'):
-
+            # verifying if variable month matches a month or all
             break
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -76,7 +76,7 @@ def get_filters():
 
         if day in ('monday', 'tuesday', 'wednesday',
                    'thursday', 'friday', 'saturday', 'sunday', 'all'):
-
+            # verifying if variable day matches a day chosen or all
             break
 
     print('-'*40) # prints one line of 40 dashes to draw separation
