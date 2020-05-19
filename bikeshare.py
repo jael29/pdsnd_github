@@ -2,6 +2,12 @@ import time
 import pandas as pd
 import numpy as np
 
+# Creator = Jermaine Robinson
+# Email = jermaineprogrammer@gmail.com or jermainejm507@gmail.com
+# whatsapp = +50762069695
+# github = https://github.com/jael29
+# linkedin.com = https://www.linkedin.com/in/jermainerobinson/
+
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
