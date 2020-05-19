@@ -2,6 +2,12 @@ import time
 import pandas as pd
 import numpy as np
 
+# Creator = Jermaine Robinson
+# Email = jermaineprogrammer@gmail.com or jermainejm507@gmail.com
+# whatsapp = +50762069695
+# github = https://github.com/jael29
+# linkedin.com = https://www.linkedin.com/in/jermainerobinson/
+
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -45,7 +51,7 @@ def get_filters():
         # print(city)
 
         if city in ('chicago', 'new york city', 'washington'):
-
+            # verifying if variable city matches a city
             break
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -61,7 +67,7 @@ def get_filters():
 
         if month in ('january', 'february', 'march', 'april',
                      'may', 'june', 'all'):
-
+            # verifying if variable month matches a month or all
             break
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -76,7 +82,7 @@ def get_filters():
 
         if day in ('monday', 'tuesday', 'wednesday',
                    'thursday', 'friday', 'saturday', 'sunday', 'all'):
-
+            # verifying if variable day matches a day chosen or all
             break
 
     print('-'*40) # prints one line of 40 dashes to draw separation
@@ -159,7 +165,7 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
     sleep(3)
     # TO DO: display most commonly used start station
     popular_start_station = df['Start Station'].mode()[0]
@@ -188,7 +194,7 @@ def trip_duration_stats(df):
     sleep(2)
     print('\nCalculating Trip Duration...\n')
     sleep(1)
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
@@ -207,7 +213,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
+    start_time = time.time() # saving start time of this part of code
     sleep(1)
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts()
