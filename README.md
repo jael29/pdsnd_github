@@ -15,6 +15,8 @@ for bikeshare usage for Chicago, New York City, and Wasghinton.
 
 3- may 18th 2020 10:25 am Added comments to describe sleep function definition
 
+4- May 18th 2020 11:35 pm created new master branch
+
 ### Files used
 I used a csv file for Chicago, New York City, and Washington.
 I included the .py file with the scripting code. 
