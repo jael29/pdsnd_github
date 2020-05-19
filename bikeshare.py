@@ -280,4 +280,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    pd.__version__
+    pd.show_versions()
