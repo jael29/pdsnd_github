@@ -270,6 +270,7 @@ def main():
             answer = input('Please enter yes or no: \n')
             answer = answer.lower()
             # capturing the input for the yes or no answer
+            # changing the input to lower case to minimze errors.
             if answer == 'yes' or answer == 'y' or answer == 'ye':
                 print(df.head(count*5))
                 # used to print 5 more rows of the raw data.
