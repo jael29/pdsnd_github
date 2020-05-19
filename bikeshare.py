@@ -79,7 +79,7 @@ def get_filters():
 
             break
 
-    print('-'*40) # prints one line of 40 dashes to draw separation
+    print('-'*40)  # prints one line of 40 dashes to draw separation
     return city, month, day
 
 
@@ -151,7 +151,7 @@ def time_stats(df):
     print('The most popular hour of the day is: ', popular_hour)
     sleep(1)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40) # prints one line of 40 dashes to draw separation
+    print('-'*40)  # prints one line of 40 dashes to draw separation
     sleep(5)
 
 
@@ -179,7 +179,7 @@ def station_stats(df):
           'and End Stations is: ', popular_start_end_stations)
     sleep(2)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40) # prints one line of 40 dashes to draw separation
+    print('-'*40)  # prints one line of 40 dashes to draw separation
     sleep(2)
 
 
@@ -200,7 +200,7 @@ def trip_duration_stats(df):
     sleep(1)
     print("\nThis took %s seconds." % (time.time() - start_time))
     sleep(3)
-    print('-'*40) # prints one line of 40 dashes to draw separation
+    print('-'*40)  # prints one line of 40 dashes to draw separation
 
 
 def user_stats(df):
@@ -241,7 +241,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     sleep(3)
-    print('-'*40) # prints one line of 40 dashes to draw separation
+    print('-'*40)  # prints one line of 40 dashes to draw separation
 
 
 def main():
@@ -249,10 +249,10 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        time_stats(df) # function frequent times of travel
-        station_stats(df) # function to calculate frequent start,
+        time_stats(df)  # function frequent times of travel
+        station_stats(df)  # function to calculate frequent start,
         # end, stations
-        trip_duration_stats(df) # function to calculate total travel time
+        trip_duration_stats(df)  # function to calculate total travel time
         user_stats(df)
 
         count = 1  # counter used to multiply the count number * 5
