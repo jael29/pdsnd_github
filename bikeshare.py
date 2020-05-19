@@ -12,6 +12,7 @@ city = 'washington'
 #  since Washington
 #  Does not contain a column for Gender or Birth year.
 
+
 def sleep(seconds):
     time.sleep(seconds)
     # sleep function takes one argument for seconds to delay
@@ -40,7 +41,7 @@ def get_filters():
               "Chicago, New York City, Washington? \n")
         sleep(1)
         city = input("\nPlease write Chicago, New York City or Washington: \n")
-        city = city.lower() 
+        city = city.lower()
         # changing input to lower case to prevent problems with case letters
         # print(city)
 
@@ -112,7 +113,7 @@ def load_data(city, month, day):
 
     df['day_of_week'] = df['Start Time'].dt.day_name()
     # converting day of week to number example
-    
+
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
