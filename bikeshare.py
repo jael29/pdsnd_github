@@ -269,14 +269,14 @@ def main():
             sleep(1)
             answer = input('Please enter yes or no: \n')
             answer = answer.lower()
-
+            # capturing the input for the yes or no answer
             if answer == 'yes' or answer == 'y' or answer == 'ye':
                 print(df.head(count*5))
                 # used to print 5 more rows of the raw data.
                 sleep(1)
                 count += 1
             else:
-                break
+                break  # just changing the else to anything different
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         sleep(1)
